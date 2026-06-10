@@ -1,3 +1,5 @@
+Live render link : https://nec-project2-2.onrender.com
+
 # Intelligent Sales
 
 Live Application: http://localhost:8501
