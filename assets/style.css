@@ -1,0 +1,167 @@
+:root {
+  --bg: #f5f9ff;
+  --bg-2: #eaf4ff;
+  --panel: rgba(255, 255, 255, 0.9);
+  --panel-strong: rgba(255, 255, 255, 0.98);
+  --border: rgba(11, 27, 40, 0.08);
+  --border-strong: rgba(102, 126, 234, 0.18);
+  --text: #072033;
+  --muted: #4b6b7a;
+  --accent: #4b6ef6;
+  --accent-2: #ff7a59;
+  --accent-3: #80ed99;
+  --danger: #d9534f;
+}
+
+html, body, .stApp {
+  background:
+    radial-gradient(circle at top left, rgba(75, 110, 246, 0.06), transparent 20%),
+    radial-gradient(circle at top right, rgba(255, 122, 89, 0.04), transparent 22%),
+    linear-gradient(160deg, var(--bg), var(--bg-2));
+  color: var(--text);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+[data-testid="stSidebar"] {
+  background: linear-gradient(180deg, rgba(7, 17, 31, 0.96), rgba(10, 20, 38, 0.92));
+  border-right: 1px solid var(--border);
+}
+
+.block-container {
+  padding-top: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+.hero-card {
+  background: linear-gradient(135deg, rgba(245, 183, 0, 0.12), rgba(76, 201, 240, 0.10)), var(--panel-strong);
+  border: 1px solid var(--border-strong);
+  border-radius: 24px;
+  padding: 28px 30px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.24);
+}
+
+.hero-card h1 {
+  margin: 0;
+  color: var(--text);
+  font-size: 2.2rem;
+  line-height: 1.15;
+}
+
+.hero-card p {
+  margin: 0.7rem 0 0 0;
+  color: var(--muted);
+  max-width: 980px;
+  font-size: 1rem;
+}
+
+.hero-kicker {
+  color: var(--accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--text);
+}
+
+p, li, label, span {
+  color: var(--text);
+}
+
+[data-testid="stMetric"] {
+  background: rgba(14, 24, 43, 0.86);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+[data-testid="stMetricLabel"] {
+  color: var(--muted);
+}
+
+[data-testid="stMetricValue"] {
+  color: var(--text);
+}
+
+.stat-card {
+  background: rgba(14, 24, 43, 0.86);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  min-height: 122px;
+}
+
+.stat-label {
+  color: var(--muted);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  color: var(--text);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.stat-detail {
+  color: var(--accent-2);
+  font-size: 0.88rem;
+  margin-top: 0.45rem;
+}
+
+[data-testid="stDataFrame"] {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+[data-testid="stForm"] {
+  background: rgba(12, 22, 41, 0.78);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.stButton > button,
+.stDownloadButton > button {
+  background: linear-gradient(135deg, var(--accent), #f7cf59);
+  color: #101828;
+  border: none;
+  border-radius: 14px;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  box-shadow: 0 12px 26px rgba(245, 183, 0, 0.22);
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+  filter: brightness(1.02);
+  transform: translateY(-1px);
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-testid="stSidebar"] .stRadio label {
+  color: var(--text);
+}
+
+.small-note {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.dataframe-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
